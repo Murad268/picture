@@ -19,6 +19,21 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+   // ✅ Mobil menyunun açılıb bağlanması
+   document.querySelector(".menu-toggle").addEventListener("click", function () {
+     document.querySelector(".nav-links").classList.toggle("show");
+   });
+
+   // ✅ Navbar kliklənəndə menyunun bağlanması
+   document.addEventListener("click", function (event) {
+     const isClickInsideNavbar = document.querySelector(".navbar").contains(event.target);
+     const navLinks = document.querySelector(".nav-links");
+
+     if (!isClickInsideNavbar && navLinks.classList.contains("show")) {
+       navLinks.classList.remove("show");
+     }
+   });
   // ✅ Swiper Setup
   var swiper = new Swiper(".mySwiper", {
     direction: "vertical",
