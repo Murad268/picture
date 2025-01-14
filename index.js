@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+
+  
   // ✅ SweetAlert ilə "Buy Now"
   document.querySelectorAll(".add-to-cart").forEach(button => {
     button.addEventListener("click", function () {
