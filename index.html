@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Store</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="https://picsum.photos/140/50" alt="Logo">
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">New Arrivals</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with Vertical Slider -->
+  <header class="hero">
+    <div class="hero-slider">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://picsum.photos/800/600?random=1" alt="Artwork"></div>
+          <div class="swiper-slide"><img src="https://picsum.photos/800/600?random=2" alt="Artwork"></div>
+          <div class="swiper-slide"><img src="https://picsum.photos/800/600?random=3" alt="Artwork"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <h1 id="hero-title">Discover Timeless Art</h1>
+      <p id="hero-text">Immerse yourself in a world of exquisite paintings and stunning masterpieces.</p>
+      <a href="#" class="btn">Explore Now</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="https://picsum.photos/600/500?random=10" alt="About Art">
+      </div>
+      <div class="about-content">
+        <h2>About Our Art Collection</h2>
+        <p>
+          Our passion for art drives us to curate a selection of the finest, most captivating pieces from talented
+          artists worldwide.
+          Each artwork tells a story, blending tradition and modern aesthetics in a timeless experience.
+        </p>
+        <div class="extra-content">
+          <p>
+            Whether you're an art lover, a collector, or simply seeking inspiration, our carefully curated collection
+            offers something for everyone.
+          </p>
+          <p>
+            We believe that art has the power to transform spaces and elevate emotions, creating unforgettable moments
+            in every home.
+          </p>
+        </div>
+        <button class="btn read-more">Learn More</button>
+      </div>
+    </div>
+  </section>
+  <!-- Products Section -->
+<!-- Products Section -->
+<section class="products">
+  <h2>Our Exclusive Art Collection</h2>
+  <div class="tab-menu">
+    <button class="tab-btn active" data-category="all">All</button>
+    <button class="tab-btn" data-category="abstract">Abstract</button>
+    <button class="tab-btn" data-category="modern">Modern</button>
+    <button class="tab-btn" data-category="classic">Classic</button>
+  </div>
+
+  <div class="product-grid">
+    <div class="product-item" data-category="abstract">
+      <a href="https://picsum.photos/1000/1200?random=1" data-fancybox="gallery">
+        <img src="https://picsum.photos/250/300?random=1" alt="Abstract Art">
+      </a>
+      <h3>Abstract Harmony</h3>
+      <p>$150</p>
+      <div class="button-group">
+        <button class="btn add-to-cart">Add to Cart</button>
+        <button class="btn buy-now">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-item" data-category="modern">
+      <a href="https://picsum.photos/1000/1200?random=2" data-fancybox="gallery">
+        <img src="https://picsum.photos/250/300?random=2" alt="Modern Art">
+      </a>
+      <h3>Modern Elegance</h3>
+      <p>$200</p>
+      <div class="button-group">
+        <button class="btn add-to-cart">Add to Cart</button>
+        <button class="btn buy-now">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-item" data-category="classic">
+      <a href="https://picsum.photos/1000/1200?random=3" data-fancybox="gallery">
+        <img src="https://picsum.photos/250/300?random=3" alt="Classic Art">
+      </a>
+      <h3>Timeless Classic</h3>
+      <p>$250</p>
+      <div class="button-group">
+        <button class="btn add-to-cart">Add to Cart</button>
+        <button class="btn buy-now">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-item" data-category="abstract">
+      <a href="https://picsum.photos/1000/1200?random=4" data-fancybox="gallery">
+        <img src="https://picsum.photos/250/300?random=4" alt="Abstract Art">
+      </a>
+      <h3>Vivid Impressions</h3>
+      <p>$180</p>
+      <div class="button-group">
+        <button class="btn add-to-cart">Add to Cart</button>
+        <button class="btn buy-now">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Contact Info -->
+    <div class="footer-info">
+      <h3>Contact Us</h3>
+      <p><i class="fas fa-map-marker-alt"></i> 123 Art Street, Baku, Azerbaijan</p>
+      <p><i class="fas fa-phone-alt"></i> +994 50 123 45 67</p>
+      <p><i class="fas fa-envelope"></i> contact@artstore.com</p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2024 Art Store. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script defer src="index.js"></script> <!-- DEFER ƏLAVƏ EDİLDİ -->
+
+</body>
+
+</html>
